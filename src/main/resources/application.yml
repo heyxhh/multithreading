@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test7?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+thread:
+  pool:
+    corePoolSize: 4
+    maxPoolSize: 4
+    queueCapacity: 100
+    keepAliveSeconds: 120
+    namePrefix: "handler"
+
+
